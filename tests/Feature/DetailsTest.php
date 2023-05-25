@@ -15,7 +15,8 @@ class DetailsTest extends TestCase
      */
     public function test_example()
     {
-        $response = $this->get('customers/1');
+
+        $response = $this->get('customers/'.rand(1,100));
 
         $response->assertStatus(200);
     }
